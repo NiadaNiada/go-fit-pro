@@ -3,6 +3,7 @@ import { Field, reduxForm } from "redux-form";
 
 class FormComp extends React.Component {
   render() {
+    const required = value => value ? undefined : 'Required'
     const { handleSubmit, pristine, reset, submitting } = this.props;
     return (
       <div className="form">
@@ -22,6 +23,7 @@ class FormComp extends React.Component {
                   component="input"
                   type="number"
                   placeholder="Weight"
+                  validate={[required]}
                 />
               </div>
             </div>
@@ -34,6 +36,7 @@ class FormComp extends React.Component {
                   component="input"
                   type="number"
                   placeholder="Age"
+                  validate={[required]}
 
                 />
               </div>
@@ -41,7 +44,12 @@ class FormComp extends React.Component {
             <div>
               <label>Height in Cm</label>
               <div>
-                <Field name="height" component="input" className="height" placeholder="Height" type="number">
+                <Field name="height"
+                  component="input"
+                  className="height"
+                  placeholder="Height"
+                  type="number"
+                  validate={[required]}>
 
                 </Field>
               </div>
@@ -49,7 +57,7 @@ class FormComp extends React.Component {
             <div>
               <label>Activity Level</label>
               <div>
-                <Field name="activity" component="select" className="height" placeholder="Activity">
+                <Field name="activity" component="select" className="height" placeholder="Activity" validate={[required]}>
                   <option />
                   <option value="Sedentary">Sedentary</option>
                   <option value="Light">Lightly Active</option>
@@ -68,6 +76,7 @@ class FormComp extends React.Component {
                     component="input"
                     type="radio"
                     value="male"
+                    validate={[required]}
                   />
                   Male
             </label>
@@ -77,17 +86,23 @@ class FormComp extends React.Component {
                     component="input"
                     type="radio"
                     value="female"
+                    validate={[required]}
                   />
                   Female
             </label>
               </div>
             </div>
             <div className="buttons">
-              <div class="ui buttons">
-                <button class="ui positive button">Submit</button>
-                <div class="or"></div>
-                <button class="ui button">Clear</button>
-              </div>
+              <button type="submit" disabled={submitting}>
+                Submit
+          </button>
+              <button
+                type="button"
+                disabled={pristine || submitting}
+                onClick={reset}
+              >
+                Clear Values
+          </button>
             </div>
           </div>
         </form>
