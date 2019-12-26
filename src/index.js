@@ -29,8 +29,10 @@ const store = createStore(
   composeEnhancers(applyMiddleware(thunk))
 );
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
   app
 );

@@ -45,6 +45,7 @@ class DashInfo extends React.Component {
     } else {
       return (
         <div className="subcontain">
+          <h4>Current Plan: </h4>
           <h4>Daily Caloric Intake: </h4>
 
           <div className="info">
