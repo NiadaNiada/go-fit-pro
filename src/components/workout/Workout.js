@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from './youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import "./workout.css";
 
 
 class Workout extends React.Component {

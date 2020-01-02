@@ -2,6 +2,15 @@
 @import './form.scss';
 @import './Recipes';
 @import './otherRec';
+@import './workout';
+
+.demo-big-content {
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+}
 body {
   margin: 0;
   padding: 0;
@@ -31,9 +40,9 @@ a:visited {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.pg-1 {
-  margin: 0 100px;
-}
+// .pg-1 {
+//   margin: 0 100px;
+// }
 
 nav {
   display: flex;
@@ -63,14 +72,18 @@ nav {
     }
   }
 }
+.search{
+  background: #ACBB78;
+}
 
 .head {
   display: flex;
   justify-content: center;
-  margin-top: 0;
+  // margin-top: 50px;
 
   .words {
     text-align: center;
+    margin-top: 150px;
     h1 {
       font-size: 5rem;
       font-weight: 300;
@@ -115,25 +128,40 @@ nav {
   }
 }
 
+.home-page{
+  
+
+  h1{
+    font-weight: 500;
+    font-family:"Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20%;
+  }
+}
+
 #pg2 {
-  height: 650px;
+  height: 500px;
 }
 
 ///////////Section 2/////////////
 #pg-2 {
-  margin: 125px 155px 120px 155px;
+  margin: 0px 100px 50px 100px;
   display: flex;
   justify-content: space-between;
   .welcomeImg {
-    background: url("../img/welcome-food-min.jpg") no-repeat center center;
-    background-size: cover;
-    height: 560px;
-    width: 600px;
-    margin-right: 132px;
+    background: url("../img/maxresdefault.jpg") no-repeat center center;
+    background-size: contain;;
+    height: 500px;
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 0px;
   }
 
   .welcome-card {
-    width: 525px;
+    width: 500px;
     display: flex;
     align-items: center;
     h2 {
@@ -150,7 +178,7 @@ nav {
 ///////////Section 3/////////////
 
 #pg-3 {
-  margin: 125px 155px 120px 155px;
+  margin: 0px 100px 50px 100px;
   height: 600px;
 
   .title {
@@ -200,8 +228,10 @@ nav {
 
 ///////////Section 3/////////////
 footer {
-  height: 100px;
-  background: #504f50;
+  background: #ACBB78;  /* fallback for old browsers */
+
+
+  height: 70px;
   display: flex;
   align-items: center;
   .foot {

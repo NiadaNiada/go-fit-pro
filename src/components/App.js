@@ -36,19 +36,19 @@ class App extends React.Component {
       //     </Content>
       //   </Layout>
       // </div>
-      <div className="demo-big-content">
+      <div >
         <div >
-          <Layout fixedHeader style={{ backgroundColor: '#6A5D4C' }}>
-            <Header transparent title="GO FIT-PRO"></Header>
-            <Drawer title="GO FIT-PRO">
+          <Layout fixedHeader className="demo-big-content" style={{ menu: "green" }}>
+            <Header transparent title="GO FIT-PRO" style={{ color: "white" }} >
+
+              {/* <Drawer title="GO FIT-PRO" style={{ color: "green" }}> */}
               <Navigation >
                 <Link to="/home">Home</Link>
                 <Link to="/dashboard">Dashboard</Link>
                 <Link to="/workout">Workout</Link>
                 <Link to="/recipes">Recipes</Link>
               </Navigation>
-
-            </Drawer>
+            </Header>
 
             <Content>
               <div className="page-content" />
@@ -69,7 +69,7 @@ class App extends React.Component {
           </div> */}
           </Layout>
         </div>
-      </div>
+      </div >
     );
   }
 }

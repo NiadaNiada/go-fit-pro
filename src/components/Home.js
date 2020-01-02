@@ -4,7 +4,7 @@ import { Layout, Header, Navigation, Drawer, Content, Link } from 'react-mdl';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="home-page">
                 <h1>Wellcome to Go FIT-PRO</h1>
                 <section id="pg-2">
                     <div className="welcomeImg" />
@@ -39,7 +39,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="card">
-                            <i className="fas fa-check" />
+                            <i className="fas fa-utensils" />
                             <div className="content-card">
                                 <h3>Choose Your Food</h3>
                                 <h4>
@@ -49,10 +49,10 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="card">
-                            <i className="fas fa-utensils" />
+                            <i className="fas fa-dumbbell" />
                             <div className="content-card">
-                                <h3>Enjoy Your Food</h3>
-                                <h4>Now you enjoy your new meal plan! Simple as that.</h4>
+                                <h3>Workout daily</h3>
+                                <h4>You can search for workout videos! Do it daily and you will see the result.</h4>
                             </div>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ class LandingPage extends React.Component {
                     <div className="pg-1">
                         <div className="head">
                             <div className="words">
-                                <h1>Calorie Counter</h1>
+                                <h1>Wellcome to Go Fit-PRO</h1>
                                 <h3>Take You're First Steps To A Healthy Life</h3>
                                 <div className="section">
                                     <Link to="/dashboard">
