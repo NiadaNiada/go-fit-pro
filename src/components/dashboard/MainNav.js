@@ -18,20 +18,18 @@ class MainNav extends React.Component {
   render() {
     if (!this.props.macroChecker.isDone) {
       return (
-        <div id="mainNav">
-          <div className="main-nav">
-            <div className="user"></div>
-          </div>
+        <div >
+          <div className="user"></div>
 
           <FormComp onSubmit={this.submit} />
         </div>
       );
     } else {
       return (
-        <div id="mainNav">
-          <div className="main-nav">
-            <div className="user"></div>
-          </div>
+        <div >
+
+          <div className="user"></div>
+
           <div className="content">
             <DashInfo />
           </div>

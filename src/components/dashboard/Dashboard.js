@@ -1,9 +1,6 @@
 import React from 'react';
 import MainNav from './MainNav';
 
-
-
-
 class Dashboard extends React.Component {
 
     render() {

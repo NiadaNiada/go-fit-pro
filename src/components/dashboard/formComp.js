@@ -1,6 +1,7 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
 
+
 class FormComp extends React.Component {
 
   renderError({ error, touched }) {
@@ -25,21 +26,22 @@ class FormComp extends React.Component {
     );
   }
 
+
   render() {
     const { handleSubmit, pristine, reset, submitting, invalid, error } = this.props;
     return (
+
       <div className="form">
-        <div className="ui raised very padded text container segment container-box">
-          <h2 className="ui header">Fill in the form</h2>
+        <form
+          onSubmit={handleSubmit}
+          className="ui form info-form error"
+        >
 
-          <form
-            onSubmit={handleSubmit}
-            className="ui form info-form error"
-          >
+          <div className="form-fields">
+            <h4>PERSONAL DATA</h4>
+            <div className="list-inputs">
 
-            <div>
-
-              <div className="required field">
+              <div className="inputs-form">
                 <label>Weight in Kg</label>
                 <Field
                   component={this.renderInput}
@@ -49,75 +51,77 @@ class FormComp extends React.Component {
                 />
               </div>
 
-              <div className="required field">
+              <div className="inputs-form">
                 <label>Age</label>
                 <Field
                   component={this.renderInput}
                   name="age"
                   type="number"
                   placeholder="Enter age.."
-                  className="required field"
 
                 />
               </div>
-              <div className="required field">
+              <div className="inputs-form">
                 <label>Height in Cm</label>
                 <Field
                   component={this.renderInput}
                   name="height"
                   placeholder="Enter height.."
                   type="number"
-                  className="required field"
 
                 />
               </div>
-              <div className="required field">
+              <div className="inputs-form">
                 <label>Activity Level</label>
-                <Field
-                  component={this.renderInput}
-                  name="activity"
-                  component="select"
-                  placeholder="Select activity.."
-                  className="required field">
-                  <option />
-                  <option value="Sedentary">Sedentary</option>
-                  <option value="Light">Lightly Active</option>
-                  <option value="Moderate">Moderately Active</option>
-                  <option value="Very">Very Active</option>
-                  <option value="Extreme">Extremely Active</option>
-                </Field>
-
-              </div>
-
-              <div className="required field">
-
-                <label for="gender">Select Gender</label>
-                <div className="inline fields">
-                  <div className="field">
-                    <Field
-                      className="ui radio checkbox"
-                      name="gender"
-                      component="input"
-                      type="radio"
-                      value="male"
-                    />
-                    <label> Male</label>
-                  </div>
-                  <div className="field">
-                    <Field
-                      component={this.renderInput}
-                      className="ui radio checkbox"
-                      name="gender"
-                      component="input"
-                      type="radio"
-                      value="female"
-                    />
-                    <label> Female</label>
-                  </div>
+                <div className="dropdown">
+                  <Field
+                    component={this.renderInput}
+                    name="activity"
+                    component="select"
+                    placeholder="Select activity.."
+                  >
+                    <option />
+                    <option value="Sedentary">Sedentary</option>
+                    <option value="Light">Lightly Active</option>
+                    <option value="Moderate">Moderately Active</option>
+                    <option value="Very">Very Active</option>
+                    <option value="Extreme">Extremely Active</option>
+                  </Field>
                 </div>
               </div>
+
+              <div className="inputs-form">
+
+                <label htmlFor="gender">Select Gender</label>
+                <div className="gender-fields">
+
+                  <Field
+                    className="ui radio checkbox"
+                    name="gender"
+                    component="input"
+                    type="radio"
+                    value="male"
+                  />
+                  <label>   Male</label>
+
+                </div>
+                <div className="gender-fields">
+
+                  <Field
+                    component={this.renderInput}
+                    className="ui radio checkbox"
+                    name="gender"
+                    component="input"
+                    type="radio"
+                    value="female"
+                  />
+                  <label>   Female</label>
+
+                </div>
+
+              </div>
               <div >
-                <button className="buttons submit huge left floated ui button"
+                <button className="buttons positive huge left floated ui button"
                   type="submit" disabled={invalid || submitting}>Submit</button>
                 <button className="buttons negative huge right floated ui button"
                   type="button"
@@ -128,9 +132,11 @@ class FormComp extends React.Component {
           </button>
               </div>
             </div>
-
-          </form>
-        </div>
+          </div>
+        </form>
+        <footer>
+          <div className="foot">Diana Arsenii © 2020. All Rights Reservered</div>
+        </footer>
       </div>
     );
   }

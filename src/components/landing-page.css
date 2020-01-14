@@ -5,7 +5,10 @@
  */
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica;
+  font-size: 2rem;
+color: #FFFFFF;
+text-align: center;
 }
 
 h1,
@@ -17,7 +20,7 @@ h6 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
-
+/* 
 header.masthead {
   position: relative;
   background-color: #343a40;
@@ -109,6 +112,7 @@ header.masthead h1 {
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
+
 }
 
 .call-to-action .overlay {
@@ -124,4 +128,5 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
+} */
+

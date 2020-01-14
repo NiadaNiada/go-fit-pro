@@ -11,32 +11,44 @@ class DashInfo extends React.Component {
   clickIt(value) {
     this.props.customMacros(this.props.macroChecker, value.target.id);
   }
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0)
+  }
   render() {
 
     if (!this.props.fitnessGoals.customMacDone) {
       return (
-        <div className="recipeContent-contain">
-          <h4 className="rec-title">We would like to know your fitness goals.</h4>
-          <div className="recipeContent">
-            <div className="fitness-goals" >
-              <div className="fit-img fit-lose" />
-              <div className="fit-title">
-                <h4>Lose Weight</h4>
-                <button className="click-here" id="lose" onClick={this.clickIt}>Click Here</button>
+        <div className="goals-contain">
+          <div className="goals-content">
+
+            {/* <h4>We would like to know your fitness goals.</h4> */}
+
+            <div className="select-goal">
+              <h4>We would like to know your fitness goals.</h4>
+              <div className="fitness-goals" >
+                <div className="fit-img fit-lose" />
+                <div className="fit-title">
+                  <h3>Lose Weight</h3>
+                  <button className="ui inverted blue basic button select-button" id="lose" onClick={this.clickIt}>Click Here</button>
+                </div>
               </div>
-            </div>
-            <div className="fitness-goals">
-              <div className="fit-img fit-maintain" />
-              <div className="fit-title">
-                <h4>Maintain Weight</h4>
-                <button className="click-here" id="maintain" onClick={this.clickIt}>Click Here</button>
+              <div className="fitness-goals">
+                <div className="fit-img fit-maintain" />
+                <div className="fit-title">
+                  <h3>Maintain Weight</h3>
+                  <button className="ui inverted blue basic button select-button" id="maintain" onClick={this.clickIt}>Click Here</button>
+                </div>
               </div>
-            </div>
-            <div className="fitness-goals">
-              <div className="fit-img fit-gain" />
-              <div className="fit-title">
-                <h4>Gain Weight</h4>
-                <button className="click-here" id="gain" onClick={this.clickIt}>Click Here</button>
+              <div className="fitness-goals">
+                <div className="fit-img fit-gain" />
+                <div className="fit-title">
+                  <h3>Gain Weight</h3>
+                  <button className="ui inverted blue basic button select-button" id="gain" onClick={this.clickIt}>Click Here</button>
+                </div>
               </div>
             </div>
           </div>
@@ -46,8 +58,6 @@ class DashInfo extends React.Component {
       return (
         <div className="subcontain">
           <h4>Current Plan: </h4>
-          <h4>Daily Caloric Intake: </h4>
-
           <div className="info">
             <div className="left">
               <h4>Calories: {this.props.fitnessGoals.calories}kcal</h4>
@@ -62,8 +72,8 @@ class DashInfo extends React.Component {
           <div className="bottom">
             <h4>
               Congrats, you've successfully calculated your daily needs. So what
-              now? Click on the recipes link on the left side to access hundreds
-              of recipes
+              now? Click on the recipes link to access hundreds
+              of recipes and also pick a daily workout.
             </h4>
           </div>
         </div>

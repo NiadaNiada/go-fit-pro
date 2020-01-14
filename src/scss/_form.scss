@@ -1,62 +1,95 @@
 .info-form {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-//   background: url("../img/fitnesstips.jpg");
-//   background: #F7F8F8;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #ACBB78, #F7F8F8);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #ACBB78, #F7F8F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ // background: url("../img/Bitmap.png") no-repeat center center;
+  // background-size: 100% 100%;
+  // background-position: 100% 100%;
+  // width: 100vw;
+  // height: 100vh;
+  background:linear-gradient(180deg, #0A1E4C 0%, rgba(0,0,0,0.00) 90%), url("../img/Bitmap.png") center center no-repeat;
+  background-size: cover;
+min-height: 800px;
+min-width: 100%;
+max-height: 5000px;
 
-  .inputs {
-    .input {
-      width: 500px;
-      background-color: #ACBB78;
+}
+
+  .inputs-form {
+    font-family: Helvetica;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    text-align: left;
+    .dropdown {
+      select {
+       height: 40px;
+      }
     }
+    ::placeholder {
+      color: red;
+    }
+
+  }
+
+  .form-fields {
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 40%;
+    h4 {
+      
+      font-family: Helvetica;
+font-size: 45px;
+color: #FFFFFF;
+text-align: left;
+    }
+  }
+  .form {
+    height: 100%;
+    width: 100%;
+
     label {
-        text-align: center;
-        margin-top: 10px;
-        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        font-size: 2rem;;
+      font-family: Helvetica;
+font-size: 30px;
+color: #FFFFFF;
+text-align: left;
     }
-    
-  }
 
-  .container-box {
-    h2 {
-      text-align: center;
-      margin-top: 10px;
-      font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-weight: 700;
-      font-size: 2rem;;
-    }
-  }
-
-  .gender{
-      display: flex;
-      justify-content: space-around;
+  .gender-fields{ 
+    label{
+      display: inline-table;
+      margin: 10px 10px;
+      font-family: Helvetica;
+font-size: 30px;
+color: #FFFFFF;
+text-align: left;
+    }  
   }
 
   .buttons{
-      height: 50px;
-      width: 200px;
+    margin-top: 20px;
+      height: 15%;
+      width: 45%;
       align-content: center;
       text-align: center;
       justify-content: center;
-      
-      
+      margin-bottom: 50px;
 
   }
 }
+
 footer {
+  background: #060047; /* fallback for old browsers */
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #414141;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+
   height: 70px;
   display: flex;
   align-items: center;
+
   .foot {
       color: white;
-      margin-left: 100px;
+      margin-left: 5%;
   }
 }

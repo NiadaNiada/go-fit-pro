@@ -1,47 +1,25 @@
 import React from "react";
+import ReactDOM from 'react-mdl';
 import LandingPage from "./LandingPage";
 import Dashboard from './dashboard/Dashboard';
 import Recipes from './recipes/Recipes'
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import "../scss/main.scss";
-import './App.css'
 import Main from "./Main";
-import Workout from "./Workout";
-import Home from "./Home";
+
 class App extends React.Component {
+
   render() {
     return (
-
-      // <div className="landing-layout">
-      //   <Layout fixedHeader>
-      //     <Header transparent title="FIT">
-      //       <Navigation>
-      //         <Link to="/resume">Link</Link>
-      //         <Link to="/resume">Link</Link>
-      //         <Link to="/resume">Link</Link>
-      //         <Link to="/resume">Link</Link>
-      //       </Navigation>
-      //     </Header>
-      //     <Drawer title="Title">
-      //       <Navigation>
-      //         <Link to="/resume">Link</Link>
-      //         <Link to="/resume">Link</Link>
-      //         <Link to="/resume">Link</Link>
-      //         <Link to="/resume">Link</Link>
-      //       </Navigation>
-      //     </Drawer>
-      //     <Content>
-
-      //     </Content>
-      //   </Layout>
-      // </div>
       <div >
-        <div >
-          <Layout fixedHeader className="demo-big-content" style={{ menu: "green" }}>
-            <Header transparent title="GO FIT-PRO" style={{ color: "white" }} >
+        <div>
+          <Layout fixedHeader className="demo-big-content">
 
-              {/* <Drawer title="GO FIT-PRO" style={{ color: "green" }}> */}
+            <Header className="nav-bar" transparent title="GO FIT_PRO" style={{ color: "white" }} >
+              {/* <div className="logo">
+              <img clasName="logo-img" src={require('../img/logo1.png')} alt="logo" style={{ right: "100px", position: 'sticky', border: "2px solid #4CAF50" }} />
+            </div> */}
               <Navigation >
                 <Link to="/home">Home</Link>
                 <Link to="/dashboard">Dashboard</Link>
@@ -49,27 +27,22 @@ class App extends React.Component {
                 <Link to="/recipes">Recipes</Link>
               </Navigation>
             </Header>
-
+            <Drawer title="GO FIT-PRO" style={{ color: "black" }}>
+              <Navigation >
+                <Link to="/home">Home</Link>
+                <Link to="/dashboard">Dashboard</Link>
+                <Link to="/workout">Workout</Link>
+                <Link to="/recipes">Recipes</Link>
+              </Navigation>
+            </Drawer>
             <Content>
               <div className="page-content" />
               <Main />
             </Content>
-
-            {/* <div>
-            <BrowserRouter>
-
-              <Route path="/" exact component={LandingPage} />
-              <Route path="/home" exact component={Home} />
-              <Route path="/dashboard" exact component={Dashboard} />
-              <Route path="/recipes" exact component={Recipes} />
-              <Route path="/workout" exact component={Workout} />
-
-
-            </BrowserRouter>
-          </div> */}
           </Layout>
         </div>
-      </div >
+      </div>
+
     );
   }
 }

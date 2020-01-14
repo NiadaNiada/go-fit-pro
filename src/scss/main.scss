@@ -3,14 +3,24 @@
 @import './Recipes';
 @import './otherRec';
 @import './workout';
+@import './activity';
+
+  
+//   .nav-bar {
+//     font-family: Helvetica;
+// font-size: 48px;
+// color: #414141;
+// text-align: left;
+//   }
 
 .demo-big-content {
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
+  background-image: linear-gradient(180deg, #0A1E4C 0%, rgba(0,0,0,0.00) 100%);
+  // background: #bdc3c7;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -29,49 +39,18 @@ a:visited {
 }
 #pg1 {
   color: white;
-  height: 800px;
-  background: url("../img/fitnesstips.jpg") no-repeat center center;
+  height: 100%;
+  background: url("../img/salad-landing.png") no-repeat center center;
   background-size: cover;
+  background-position: 20% 20%;
 }
 
 .darken-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(180deg, #0A1E4C 0%, rgba(0,0,0,0.00) 100%);
 }
 
-// .pg-1 {
-//   margin: 0 100px;
-// }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-
-  .logo {
-    margin-top: 30px;
-  }
-  ul {
-    display: flex;
-
-    li {
-      padding: 10px;
-      border-radius: 15px;
-
-      &:hover,
-      &:focus {
-        transition: all 0.6s;
-        background-color: white;
-      }
-      a {
-        &:hover {
-          transition: all 0.6s;
-          color: black;
-        }
-      }
-    }
-  }
-}
 .search{
   background: #ACBB78;
 }
@@ -79,18 +58,26 @@ nav {
 .head {
   display: flex;
   justify-content: center;
-  // margin-top: 50px;
 
   .words {
     text-align: center;
     margin-top: 150px;
+    margin: 10% 5% 5% 5%;
     h1 {
+      font-family: Helvetica;
+//font-size: 100px;
+color: #FFFFFF;
+text-align: center;
       font-size: 5rem;
-      font-weight: 300;
+      font-weight: 600;
     }
     h3 {
-      font-weight: 300;
-      font-size: 1.6rem;
+      font-family: Helvetica;
+margin-top: 5%;
+color: #FFFFFF;
+text-align: center;
+      font-weight: 500;
+      font-size: 2.5rem;
     }
   }
 }
@@ -116,7 +103,7 @@ nav {
   text-align: center;
   text-decoration: none;
   user-select: none;
-  width: 210px;
+  width: 250px;
 
   width: 150px;
   &:hover,
@@ -129,75 +116,110 @@ nav {
 }
 
 .home-page{
-  
+    // align-items: center;
+    // justify-content: center;
 
+  background-image: linear-gradient(180deg, #0A1E4C 0%, rgba(0,0,0,0.00) 70%);
   h1{
-    font-weight: 500;
-    font-family:"Roboto", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    height: 20%;
+    padding-top: 3%;
+    font-family: Helvetica;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-align: center;
   }
-}
-
-#pg2 {
-  height: 500px;
 }
 
 ///////////Section 2/////////////
 #pg-2 {
-  margin: 0px 100px 50px 100px;
-  display: flex;
-  justify-content: space-between;
-  .welcomeImg {
-    background: url("../img/maxresdefault.jpg") no-repeat center center;
-    background-size: contain;;
-    height: 500px;
-    width: 100%;
-    margin-right: 50px;
-    margin-left: 0px;
-  }
+
+  // margin: 50px 50px 50px 50px;
+  // display: flex;
+  // justify-content: center;
+  // width: 80%;
+
+  h2 { 
+    position: absolute; 
+    top: 300px; 
+    left: 0; 
+    width: 100%; 
+ }
+ 
+ h2 span { 
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px; 
+ }
+
+  // width: 90%;
+  // height: 300px;
+  // display: flex;
+ 
+ 
+  .welcomeImg{
+      background: url("../img/maxresdefault.jpg") no-repeat center center;
+      background-size: cover;
+      height: 400px;
+      width: 80%;
+      margin-left: 10%;
+
+  }   
+
+}
 
   .welcome-card {
-    width: 500px;
-    display: flex;
-    align-items: center;
+    margin: 50px 50px 50px 50px;
+    justify-content: center;
+    text-align: center;
     h2 {
-      font-size: 3rem;
+      font-family: Helvetica;
       font-weight: 300;
+      color: #FFFFFF;
+      text-align: center;
     }
     h4 {
+      font-family: Helvetica;
       font-weight: 300;
-      line-height: 24px;
+      color: #FFFFFF;
+      text-align: center;
     }
   }
-}
+
+
+
 
 ///////////Section 3/////////////
 
 #pg-3 {
-  margin: 0px 100px 50px 100px;
+  margin: 5% 5% 5% 5%;
   height: 600px;
 
   .title {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    height: 20%;
-    h2 {
+    font-family: Helvetica;
       font-size: 3rem;
       font-weight: 300;
+
+    height: 10%;
+    h2 {
+      font-family: Helvetica;
+      font-weight: 300;
+      color: #FFFFFF;
+      text-align: center;
     }
   }
   .card-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 
     align-items: center;
-    height: 80%;
+    height: 95%;
 
     .card {
       display: flex;
@@ -219,7 +241,6 @@ nav {
         }
         h4 {
           font-weight: 300;
-          line-height: 24px;
         }
       }
     }
@@ -228,14 +249,19 @@ nav {
 
 ///////////Section 3/////////////
 footer {
-  background: #ACBB78;  /* fallback for old browsers */
-
+  background: #060047; /* fallback for old browsers */
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #414141;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 
   height: 70px;
   display: flex;
   align-items: center;
+
   .foot {
       color: white;
-      margin-left: 100px;
+      margin-left: 5%;
   }
 }
