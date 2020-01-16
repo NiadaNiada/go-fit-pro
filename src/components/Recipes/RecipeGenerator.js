@@ -1,15 +1,20 @@
 import React from "react";
 import { fetchRecipe } from "../../actions";
 import { connect } from "react-redux";
+import Spinner from "../Spinner";
 
 class RecipeGenerator extends React.Component {
   render() {
-    return <div>Loading...</div>;
+    return (
+      <div className="ui inverted segment">
+        <Spinner />
+      </div>
+    );
   }
   componentDidMount() {
     this.props.fetchRecipe("");
   }
-  displa = () => {
+  display = () => {
     console.log(this.props.recObject[0].PROCNT);
   };
 
@@ -44,7 +49,10 @@ class RecipeGenerator extends React.Component {
   };
   render() {
     if (!this.props.recObject) {
-      return <div>Loading</div>;
+      return (
+        <Spinner />
+      );
+
     } else {
       return (
         <div className="recipeCardContain">{this.recipeCardGenerator()}</div>

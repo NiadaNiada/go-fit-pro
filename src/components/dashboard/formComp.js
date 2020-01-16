@@ -134,9 +134,6 @@ class FormComp extends React.Component {
             </div>
           </div>
         </form>
-        <footer>
-          <div className="foot">Diana Arsenii © 2020. All Rights Reservered</div>
-        </footer>
       </div>
     );
   }

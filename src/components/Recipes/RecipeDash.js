@@ -6,14 +6,11 @@ class RecipesDash extends React.Component {
   render() {
     if (!this.props.macroChecker.isDone) {
       return (
-        <div id="mainNav">
-          <div className="main-nav">
-            <div className="user"></div>
-          </div>
+        <div >
           <div className="content">
             <div className="not-done-modal">
               <div className="modal-content">
-                <p>Oh...It seems you haven't calculated your macros. Click home to continue.</p>
+                <p>Oh...It seems you haven't calculated your macros. Go to Dashboard to continue.</p>
               </div>
             </div>
           </div>
@@ -21,13 +18,8 @@ class RecipesDash extends React.Component {
       );
     } else {
       return (
-        <div id="mainNav">
-          <div className="main-nav">
-            <div className="user"></div>
-          </div>
-          <div className="content">
-            <RecipeContent />
-          </div>
+        <div >
+          <RecipeContent />
         </div>
       );
     }

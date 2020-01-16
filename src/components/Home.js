@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Header, Navigation, Drawer, Content, Link } from 'react-mdl';
+import Footer from './Footer';
 
 class Home extends Component {
     render() {
@@ -57,11 +58,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </section>
-                    <footer>
-                        <div className="foot">Diana Arsenii © 2020. All Rights Reservered</div>
-                    </footer>
+                    {/* <Footer /> */}
                  </div>
-
                 )
             }
         }

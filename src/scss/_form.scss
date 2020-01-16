@@ -24,10 +24,6 @@ max-height: 5000px;
        height: 40px;
       }
     }
-    ::placeholder {
-      color: red;
-    }
-
   }
 
   .form-fields {
@@ -37,7 +33,8 @@ max-height: 5000px;
     h4 {
       
       font-family: Helvetica;
-font-size: 45px;
+      font-weight: 700;
+      font-size: 3rem;
 color: #FFFFFF;
 text-align: left;
     }

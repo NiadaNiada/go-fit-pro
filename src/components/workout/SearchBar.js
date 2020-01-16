@@ -16,11 +16,11 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div className="search-bar segment ui">
+      <div className="ui massive inverted input">
         <form onSubmit={this.onFormSubmit} className="ui form">
-          <div className="field">
-            <label>Video Search</label>
-            <input type="text" value={this.state.term} onChange={this.onInputChange} />
+          <div className="ui inverted left icon input search-bar">
+            <input type="text" placeholder="Search..." value={this.state.term} onChange={this.onInputChange} />
+            <i className="search icon search-icon"></i>
           </div>
         </form>
       </div>

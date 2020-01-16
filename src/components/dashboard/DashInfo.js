@@ -24,30 +24,27 @@ class DashInfo extends React.Component {
       return (
         <div className="goals-contain">
           <div className="goals-content">
-
-            {/* <h4>We would like to know your fitness goals.</h4> */}
-
             <div className="select-goal">
               <h4>We would like to know your fitness goals.</h4>
               <div className="fitness-goals" >
                 <div className="fit-img fit-lose" />
                 <div className="fit-title">
                   <h3>Lose Weight</h3>
-                  <button className="ui inverted blue basic button select-button" id="lose" onClick={this.clickIt}>Click Here</button>
+                  <button className="ui inverted basic button select-button" id="lose" onClick={this.clickIt}>Click Here</button>
                 </div>
               </div>
               <div className="fitness-goals">
                 <div className="fit-img fit-maintain" />
                 <div className="fit-title">
                   <h3>Maintain Weight</h3>
-                  <button className="ui inverted blue basic button select-button" id="maintain" onClick={this.clickIt}>Click Here</button>
+                  <button className="ui inverted basic button select-button" id="maintain" onClick={this.clickIt}>Click Here</button>
                 </div>
               </div>
               <div className="fitness-goals">
                 <div className="fit-img fit-gain" />
                 <div className="fit-title">
                   <h3>Gain Weight</h3>
-                  <button className="ui inverted blue basic button select-button" id="gain" onClick={this.clickIt}>Click Here</button>
+                  <button className="ui inverted basic button select-button" id="gain" onClick={this.clickIt}>Click Here</button>
                 </div>
               </div>
             </div>
