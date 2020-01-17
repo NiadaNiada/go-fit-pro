@@ -4,9 +4,9 @@ import Spinner from "../Spinner";
 const VideoDetail = ({ video }) => {
   if (!video) {
     return (
-      <div >
-        <Spinner />
-      </div>
+      // <div className="ui active inverted dimmer">
+      <div >Loading...</div>
+      //  </div>
     );
   };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import MainNav from './MainNav';
-import Footer from '../Footer';
+
 
 class Dashboard extends React.Component {
 

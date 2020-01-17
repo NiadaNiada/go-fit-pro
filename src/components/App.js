@@ -30,11 +30,9 @@ class App extends React.Component {
               <Link to="/recipes">Recipes</Link>
             </Navigation>
           </Drawer>
-          <Content>
-            <div className="page-content" />
-            <Main />
-            <Footer />
-          </Content>
+          <div className="page-content" />
+          <Main />
+          <Footer />
         </Layout>
       </div>
     );

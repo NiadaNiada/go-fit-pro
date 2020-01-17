@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import youtube from './youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
+import Spinner from '../Spinner';
 
 class Workout extends React.Component {
 
@@ -54,5 +55,6 @@ class Workout extends React.Component {
         );
     }
 }
+// }
 
 export default Workout;
