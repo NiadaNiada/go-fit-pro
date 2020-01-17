@@ -3,7 +3,6 @@ import SearchBar from './SearchBar';
 import youtube from './youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
-import Footer from '../Footer';
 
 class Workout extends React.Component {
 
@@ -51,7 +50,6 @@ class Workout extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* <Footer /> */}
             </div>
         );
     }

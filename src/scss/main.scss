@@ -14,10 +14,10 @@ i{
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: Helvetica;
+  font-size: 2rem;
+color: #FFFFFF;
+text-align: center;
 }
 ul {
   list-style: none;
@@ -141,11 +141,6 @@ text-align: center;
     background: rgba(0, 0, 0, 0.4);
     padding: 10px; 
  }
-
-  // width: 90%;
-  // height: 300px;
-  // display: flex;
- 
  
   .welcomeImg{
       background: url("../img/maxresdefault.jpg") no-repeat center center;
@@ -252,7 +247,7 @@ text-align: center;
     align-items: center;
 
       color: white;
-      margin-left: 5%;
+      padding-left: 5%;
   }
 
 

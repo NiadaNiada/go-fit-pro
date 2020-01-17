@@ -16,7 +16,6 @@ class App extends React.Component {
           <Header className="nav-bar" transparent title="GO FIT_PRO" style={{ color: "white" }} >
             <i className="fab fa-gripfire"></i>
             <Navigation >
-
               <Link to="/home">Home</Link>
               <Link to="/dashboard">Dashboard</Link>
               <Link to="/workout">Workout</Link>
@@ -24,7 +23,6 @@ class App extends React.Component {
             </Navigation>
           </Header>
           <Drawer title="GO FIT_PRO" style={{ color: "black" }}>
-
             <Navigation >
               <Link to="/home">Home</Link>
               <Link to="/dashboard">Dashboard</Link>

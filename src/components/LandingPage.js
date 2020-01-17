@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./landing-page.css";
-import Footer from "./Footer";
 
 class LandingPage extends React.Component {
     render() {
@@ -22,10 +20,6 @@ class LandingPage extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* <Footer /> */}
-                {/* <footer>
-                    <div className="foot">Diana Arsenii © 2020. All Rights Reservered</div>
-                </footer> */}
             </div>
         );
     }
